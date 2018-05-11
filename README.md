@@ -5,13 +5,13 @@
 
 ```php
 <?php
-include ('StatusApi.php'); //Include php file
-use io\clonalejandro\StatusApi; // Import a StatusApi class
+  include ('StatusApi.php'); //Include php file
+  use io\clonalejandro\StatusApi; // Import a StatusApi class
 
-$req = new StatusApi('clonalejandro.me');
+  $req = new StatusApi('clonalejandro.me');
 
-if ($req->isOnline()) echo "Online";
-else echo "Offline";
+  if ($req->isOnline()) echo "Online";
+  else echo "Offline";
 ?>
 ```
 <br>
