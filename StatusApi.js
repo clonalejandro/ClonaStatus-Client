@@ -14,7 +14,7 @@
  * All rights reserved for clonalejandro ©clonastatus 2017 / 2018
  */
 
-class Interpreter {
+class StatusApi {
 
 
     /** SMALL CONSTRUCTORS **/
