@@ -1,7 +1,7 @@
 # ClonaStatus
 ## API - Usage
 
-• Usage: 
+• Usage PHP: 
 
 ```php
 <?php
@@ -16,6 +16,25 @@
 ```
 <br>
 
+• Usage HTML: 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interpreter</title>
+</head>
+<body>
+
+<script src="interpreter.js"></script>
+<script>
+    new Interpreter();
+</script>
+</body>
+</html>
+```
+<br>
 
 
 
