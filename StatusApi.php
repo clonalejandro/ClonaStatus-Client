@@ -64,7 +64,7 @@ class StatusApi {
     public function isOnline()
     {
         return $this->parseBoolean(
-            json_encode($this->getResponse()["online"])
+            json_decode($this->getResponse())->online
         );
     }
 
@@ -87,7 +87,7 @@ class StatusApi {
             curl_close($request);
         }
         else {
-            $url = "http://" . base64_decode("MTU4LjY5LjU1LjE5NA==") . "/api/status/?domain=" . $this->domain . "&port=$this->port";
+            $url = "https://server.clonalejandro.me/api/status/?domain=" . $this->domain . "&port=$this->port";
             $res = file_get_contents($url);
             $this->setResponse($res);
         }
