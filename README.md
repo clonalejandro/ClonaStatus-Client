@@ -23,13 +23,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Interpreter</title>
+    <title>StatusApi</title>
 </head>
 <body>
 
-<script src="interpreter.js"></script>
+<script src="StatusApi.js"></script>
 <script>
-    new Interpreter();
+    new StatusApi();
 </script>
 </body>
 </html>
