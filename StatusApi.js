@@ -31,10 +31,10 @@ class StatusApi {
      * This function manage the main process
      */
     init(){
-        const reqGet = this.getRequest((err, data) => {
+        this.getRequest((err, data) => {
             if (err) console.log(err);
             else console.log(data);
-        });
+        })
     }
 
 
