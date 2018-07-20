@@ -64,7 +64,7 @@ class StatusApi {
     public function isOnline()
     {
         return $this->parseBoolean(
-            json_decode($this->getResponse())->online
+            json_decode( $this->getResponse() )->online
         );
     }
 
@@ -130,12 +130,12 @@ class StatusApi {
 
     /**
      * This function parse from string to boolean
-     * @param $str
+     * @param mixed $value
      * @return boolean
      */
-    private function parseBoolean($str)
+    private function parseBoolean($value)
     {
-        return ($str == "true" || $str == true) ? true : false;
+        return $value == "true" || $value == true;
     }
 
 
