@@ -32,9 +32,9 @@
     const api = new StatusApi('domaintosearch.com');
     
     api.getRequest((err, data) => {
-            if (err) console.error(err);
-            else alert(data);
-     });
+        if (err) console.error(err);
+        else alert(data);
+    })
 </script>
 </body>
 </html>
