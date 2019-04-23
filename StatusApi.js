@@ -19,8 +19,8 @@ class StatusApi {
 
     /** SMALL CONSTRUCTORS **/
 
-    constructor(){
-        this.domain = serializeDomain("https://server.clonalejandro.me/api/status/");
+    constructor(search){
+        this.domain = serializeDomain(`https://server.clonalejandro.me/api/status/?domain=${search.domain}&port=${search.port}`);
         this.init();
     }
 
