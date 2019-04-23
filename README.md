@@ -8,7 +8,7 @@
   include ('StatusApi.php'); //Include php file
   use io\clonalejandro\StatusApi; // Import a StatusApi class
 
-  $req = new StatusApi('clonalejandro.me');
+  $req = new StatusApi('domaintosearch.com');
 
   if ($req->isOnline()) echo "Online";
   else echo "Offline";
@@ -29,7 +29,12 @@
 
 <script src="StatusApi.js"></script>
 <script>
-    new StatusApi();
+    const api = new StatusApi('domaintosearch.com');
+    
+    api.getRequest((err, data) => {
+            if (err) console.error(err);
+            else alert(data);
+     });
 </script>
 </body>
 </html>
