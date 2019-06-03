@@ -1,4 +1,4 @@
-# ClonaStatus
+# ClonaStatus 🖥️
 ## API - Usage
 
 • Usage PHP: 
