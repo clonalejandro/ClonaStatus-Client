@@ -29,7 +29,10 @@
 
 <script src="StatusApi.js"></script>
 <script>
-    const api = new StatusApi('domaintosearch.com');
+    const api = new StatusApi({
+        domain: "domaintosearch.com",
+        port: 80
+    });
     
     api.getRequest((err, data) => {
         if (err) console.error(err);
